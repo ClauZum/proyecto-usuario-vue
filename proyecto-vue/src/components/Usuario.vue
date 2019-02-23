@@ -8,7 +8,7 @@
           </b-list-group-item>
           <b-list-group-item class="border-0">
             <!-- <b-img v-bind="imagenUsuario" rounded="circle" alt="Circle image" /> -->
-            <img v-bind:src="imagenUsuario" rounded="circle" alt="Circle image">
+            <img v-bind:src="imagenUsuario" alt="Imagen usuario" class="avatar">
           </b-list-group-item>
           <b-list-group-item class="border-0">
             <b-list-group>
@@ -102,5 +102,10 @@ export default {
 </script>
 
 <style>
-    .list li.borderless { border-top: 0 none; }
+   .avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
 </style>
