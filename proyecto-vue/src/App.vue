@@ -1,17 +1,25 @@
 <template>
-  <div id="app">
-    <Usuario/>
-  </div>
+
+   <div>
+
+      <Usuario/>
+   </div>
+
+
 </template>
 
 <script>
-import Usuario from './components/Usuario.vue'
+import Usuario from './components/Usuario'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     Usuario
+  },
+  data () {
+    return {
+      //
+    }
   }
 }
 </script>
-

@@ -1,26 +1,31 @@
 <template>
-<div>
-    <h1>
-        usuario
-    </h1>
-
-     <div class="container">
-    <div class="text-center">
-      <img v-bind:src="imagenUsuario" rounded="circle" alt="Circle image">
-      <b-list-group>
-        <b-list-group-item v-for="item of listaDatosUsuario" :key="item.id">
-          <div class="  ">
-            <i class="material-icons">{{item.icono}}</i>
-            {{item.texto}}
-          </div>
-        </b-list-group-item>
-      </b-list-group>
-
-      <b-button @click="resetUsuario">Button</b-button>
+  <div>
+    <div class="container">
+      <div class="text-center">
+        <b-list-group>
+          <b-list-group-item>
+            <h1>Usuario</h1>
+          </b-list-group-item>
+          <b-list-group-item>
+            <img v-bind:src="imagenUsuario" rounded="circle" alt="Circle image">
+          </b-list-group-item>
+          <b-list-group-item>
+            <b-list-group>
+              <b-list-group-item v-for="item of listaDatosUsuario" :key="item.id">
+                <div class>
+                  <i class="material-icons">{{item.icono}}</i>
+                  {{item.texto}}
+                </div>
+              </b-list-group-item>
+            </b-list-group>
+          </b-list-group-item>
+          <b-list-group-item>
+            <b-button @click="resetUsuario">Reset</b-button>
+          </b-list-group-item>
+        </b-list-group>
+      </div>
     </div>
   </div>
-
-</div>
 </template>
 
 

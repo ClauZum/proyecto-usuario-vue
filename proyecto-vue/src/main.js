@@ -4,6 +4,9 @@ import store from './store'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import VueMDCAdapter from 'vue-mdc-adapter'
+
+Vue.use(VueMDCAdapter)
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
